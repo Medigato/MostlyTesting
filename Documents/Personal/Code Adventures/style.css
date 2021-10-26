@@ -5,7 +5,41 @@
 
 }
 
+
+.text-center {
+
+
+    text-align: center;
+}
+
 #ffCount {
 
     text-align: center;
 }
+
+.mainStoryText{
+    font-size: 45px;
+
+
+
+}
+
+.body{
+background-color: grey;
+color: rgb(65, 65, 65);
+
+
+}
+
+.vertical-center {
+    margin: 0;
+    position: relative;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .col-sm-6 {
+
+margin:auto
+  }

@@ -4,40 +4,71 @@
     <meta charset="UTF-8">
     <title>100,000 Fireflies</title>
 </head>
-<body>
+<body style="background-color:rgb(255, 248, 205) ;">
+    
     <link rel="stylesheet" type="text/css" href="style.css">
-
+  
     <script id="mainScript" src="javascript.js">
         
 
     </script>
      
     <!--    The Score Counter and Probably other currencies. --> 
-    
-    <h1 id="ffCount" class="mainText">You have 0 fireflies!</h1>
 
 
-    <p> You are born. </p>
-    
-    <p> Your world is dizziness and confusion. The rest you had been used to appeared to be over, you breathe your first breath. </p>
-        
-    <p>Then immediately start bawling your heart out. </p>
-    
-    <p> The first months are chaos, but exactly //random number of days between 24 and 36, you recognize something in the shadows.  </p>
+   
+   
 
-    <p> You extend your hand and grab the first fiber of understanding. The face amongst the blurriness is looking directly at us.  </p>
-    <p> And they're smiling. </p>
-    <p> Suddenly, you feel an irrestible urge. </p>
+   
+    <div class="container" style="flex-direction: row">
 
+        <div class="jumbotron bg-primary text-center">
+            <h1 id="title" style="color: rgb(65, 65, 65); font-size: 34px">100,000 Fireflies</h1>
+            <h1 id="goals" style="color: rgb(65, 65, 65); font-size: 34px">Goal: ?? </h1>
+        </div>
+        <div style="border: 3px; color:rgba(41, 23, 0, 0.719);background-color: rgb(255, 248, 205)"><p id="mainStoryText" class="text-center mainStoryText" style> You are born. </p></div>
+   
+
+
+        <div class="col-sm-6" style="flex-direction: column; margin:auto" >
     <!-- Buttons that add or remove fireflies, most of the actions are buttons. -->
-    <button onclick="add100ff()" id="add100ffs" class="mainText" style="float:middle">Add 100 fireflies. </button>
-    <button onclick="add1ps()" id="add1ps" class="mainText" style="float:middle"> Smile. (1ps) </button>
-    <button onclick="clear1ps()" id="add1ps" class="mainText" style="float:middle"> Frown. (-1ps) </button>
+    <button onclick="add100ff()" id="add100ffs" class="mainText text-center vertical-center" style="float:middle; display:none; margin:auto" >Add 100 fireflies. </button>
+    <button onclick="add1ps()" id="add1ps" class="mainText text-center" style="float:middle;display:none;justify-content: center; margin:auto"> Smile. (1ps) </button>
+    <button onclick="clear1ps()" id="clear1ps" class="mainText text-center" style="float:middle;display:none;justify-content: center; margin:auto"> Frown. (-1ps) </button>
+    <button onclick="continueStory()" id="continueStory" class="mainText text-center" style="display:block;margin:auto"> Continue Story </button>
+    </div>
+<br><br>
 
+    <div class="col-sm-6" id="childhoodActivities" style="display:none;justify-content:center;flex-direction:row">
+        
+        <div class="firstTwo" style="flex-direction:column">
+            <button class="btn" id="goToPark"style="justify-content:space-around;flex-direction:row; margin:auto">Go to Park</button>
+            <button class="btn" id="playVideoGames"style="justify-content:space-around;flex-direction:row; margin:auto">Play Videogames</button>
+        </div>
+        <div class="secondTwo">
+            <button class="btn" id="visitSchool"style="justify-content:space-around;flex-direction:row; margin:auto">Visit School</button>
+            <button class="btn" id="hang with Mom"style="justify-content:space-around;flex-direction:row; margin:auto">Hang with Mom</button>
+        </div>
+        
+        <br>
+        <br>
+      
+    </div>
+    <div class="well text-center">
+        <img id="box" src="img/fireflycount.png" style="height:100px;width:100px">
+        <h1 id="ffCount" class="mainText">You have 0 fireflies!</h1>
+    </div>
 
     <div id="ffpsCount" class="mainText"> <p> Currently generating 0 fireflies per second.</p></div>
     <!--//Add Button that says Smile (grants 1ffps)-->
-    
+    <script>        
+       
+
+   
+
+    </script>
+
+    </div>
 
 </body>
 </html>

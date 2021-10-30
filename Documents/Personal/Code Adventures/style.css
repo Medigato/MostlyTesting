@@ -1,7 +1,21 @@
+
+
+h1, h2, p { 
+    font-family: 'Zen Antique Soft';
+
+
+}
+
+body{
+
+    background-color:rgb(255, 248, 205);
+    
+}
+
 .mainText {
 
     text-align: center;
-
+    font-family: 'Zen Antique Soft'
 
 }
 
@@ -10,6 +24,7 @@
 
 
     text-align: center;
+    
 }
 
 #ffCount {
@@ -19,17 +34,11 @@
 
 .mainStoryText{
     font-size: 45px;
-
-
-
-}
-
-.body{
-background-color: grey;
-color: rgb(65, 65, 65);
+    font-family: 'Zen Antique Soft';
 
 
 }
+
 
 .vertical-center {
     margin: 0;
@@ -39,7 +48,7 @@ color: rgb(65, 65, 65);
     transform: translateX(-50%);
   }
 
-  .col-sm-6 {
+.col-sm-6 {
 
 margin:auto
   }

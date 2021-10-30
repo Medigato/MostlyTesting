@@ -49,8 +49,8 @@
 
             if (ff > 10) {
                 document.getElementById("continueStory").style.display = "inline";
-                mainStoryArray = ["It is the face of your mother, so unearthly among the shadows. ","Her lips are rose pink and her eyes are piercing hazel.", "Consciousness forms fast like a thunder storm.", "What would you do with your time?"];
-                // Add a Table with 4 buttons childhood activities. 
+               
+            
                         
                 
 

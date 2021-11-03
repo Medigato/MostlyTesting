@@ -5,68 +5,115 @@
     <title>100,000 Fireflies</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="WebFont/stylesheet.css">
+
+    <link rel="preload" as="font" href="https://medigato.github.io/MostlyTesting/Documents/Personal/Code%20Adventures/WebFont/ZenAntiqueSoft-Regular.woff" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="https://medigato.github.io/MostlyTesting/Documents/Personal/Code%20Adventures/WebFont/ZenAntiqueSoft-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+
+
     <script id="mainScript" src="javascript.js"></script>
 </head>
 <body>
-    
-  
-   
      
-
-
-
-   
-
-   
+    
+        <!-- main container  -->
     <div class="container">
+            <!-- Title and goal Container -->
+            <div class="col-left">
+          
+                <div class="mainTextContainer" onclick="">
+                    <div class="mainStoryInnerContainer">
+                        <p id="mainStoryText" class="text-center mainStoryText" style> You are born. </p>
+                        </div>    </div>
+                
+                <div id="activitiesContainer"  class="activitiesContainer" style="display: none;"> 
 
-        <div class="jumbotron bg-primary text-center">
-            <h1 id="title" style="color: rgb(65, 65, 65); font-size: 34px">100,000 Fireflies</h1>
-            <h1 id="goals" style="color: rgb(65, 65, 65); font-size: 34px">Goal: ?? </h1>
-        </div>
-        <div style="border: 3px; color:rgba(41, 23, 0, 0.719);background-color: rgb(255, 248, 205)"><p id="mainStoryText" class="text-center mainStoryText" style> You are born. </p></div>
+
+                    
+        
+                        <div class="firstTwo" style="flex-direction:row">
+                            <div class="individualChildhoodActivitiesBox">
+                                
+                                <label class="individualChildhoodActivitiesLabel">Play Soccer with Bobba</label>
+                                <button class="btn" id="goToPark">Visit Park</button>
+                            
+                            
+                            </div>
+                            <div class="individualChildhoodActivitiesBox">
+                                
+                                
+                                <label class="individualChildhoodActivitiesLabel">Play Games with your Mentor</label>
+                                <button class="btn" id="playVideoGames"> Call Mentor</button>
+                            
+                            
+                            </div>
+                        </div>
+                        <div class="secondTwo" style="flex-direction:row">
+                            <div class="individualChildhoodActivitiesBox">
+                                
+                                <label class="individualChildhoodActivitiesLabel">Go To School</label>
+                                <button class="btn" id="visitSchool">Visit School</button>
+                            
+                            
+                            </div>
+                            <div class="individualChildhoodActivitiesBox">
+                               
+                                    
+                                <label class="individualChildhoodActivitiesLabel">Hang With Mom</label>
+                                <button class="btn" id="hang with Mom">Stay at Home</button>
+                            
+                            
+                            </div>
+                        </div>
+                        
+                        <br>
+                        <br>
+                      
+                   
+
+
+                </div>
+            </div>
+
+        
    
 
 
-        <div class="col-sm-6" style="flex-direction: column; margin:auto" >
-    <!-- Buttons that add or remove fireflies, most of the actions are buttons. -->
-    <button onclick="add100ff()" id="add100ffs" class="mainText text-center vertical-center" style="float:middle; display:none; margin:auto" >Add 100 fireflies. </button>
-    <button onclick="add1ps()" id="add1ps" class="mainText text-center" style="float:middle;display:none;justify-content: center; margin:auto"> Smile. (1ps) </button>
-    <button onclick="clear1ps()" id="clear1ps" class="mainText text-center" style="float:middle;display:none;justify-content: center; margin:auto"> Frown. (-1ps) </button>
-    <button onclick="continueStory()" id="continueStory" class="mainText text-center" style="display:block;margin:auto"> Continue Story </button>
-    </div>
-<br><br>
+        <div class="col-right" >
 
-    <div class="col-sm-6" id="childhoodActivities" style="display:none;justify-content:center;flex-direction:row">
+            <div class="jumbotron bg-primary text-center">
+                <h1 id="title" style="font-size: 34px">100,000 Fireflies</h1>
+                <h1 id="goals" style="font-size: 34px">Goal: ?? </h1>
+            </div>
+            <div class="buttonContainer">
+                <!-- Buttons that add or remove fireflies, most of the actions are buttons. -->
+                <button onclick="add100ff()" id="add100ffs" class="mainText text-center vertical-center" style="float:middle; display:none; margin:auto" >Add 100 fireflies. </button>
+                <button onclick="add1ps()" id="add1ps" class="mainText text-center" style="display:none;justify-content: center; margin:auto"> Smile. (1ps) </button>
+                <button onclick="clear1ps()" id="clear1ps" class="mainText text-center" style="display:none;justify-content: center; margin:auto"> Frown. (-1ps) </button>
+                <button onclick="continueStory()" id="continueStory" class="mainText text-center" style="display:block;margin:auto"> Continue Story </button>
+            </div>
+            
+            
+            <br><br>
+
+    
+            <div class="well text-center">
+                <img id="box" src="img/fireflycount.png" style="height:100px;width:100px">
+                <h1 id="ffCount" class="mainText">You have 0 fireflies!</h1>
+                <div > <p id="ffpsCount" class="mainText"> Currently generating 0 fireflies per second.</p></div>
+            </div>
+
+           
+            <!--//Add Button that says Smile (grants 1ffps)-->
+                    <script>        
+            
         
-        <div class="firstTwo" style="flex-direction:column">
-            <button class="btn" id="goToPark"style="justify-content:space-around;flex-direction:row; margin:auto">Go to Park</button>
-            <button class="btn" id="playVideoGames"style="justify-content:space-around;flex-direction:row; margin:auto">Play Videogames</button>
-        </div>
-        <div class="secondTwo">
-            <button class="btn" id="visitSchool"style="justify-content:space-around;flex-direction:row; margin:auto">Visit School</button>
-            <button class="btn" id="hang with Mom"style="justify-content:space-around;flex-direction:row; margin:auto">Hang with Mom</button>
-        </div>
         
-        <br>
-        <br>
-      
-    </div>
-    <div class="well text-center">
-        <img id="box" src="img/fireflycount.png" style="height:100px;width:100px">
-        <h1 id="ffCount" class="mainText">You have 0 fireflies!</h1>
-    </div>
 
-    <div id="ffpsCount" class="mainText"> <p> Currently generating 0 fireflies per second.</p></div>
-    <!--//Add Button that says Smile (grants 1ffps)-->
-    <script>        
-       
+                    </script>
 
-   
+        </div>
 
-    </script>
-
-    </div>
+</div>
 
 </body>
 </html>

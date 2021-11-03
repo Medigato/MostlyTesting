@@ -1,9 +1,17 @@
 
+.container {
+    display: flex;
+    max-width: 1000px;
+    flex-direction: row;
+    -ms-flex-align: flex-end;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 4px;
+}
 
-
-h1, h2, p { 
+h1, h2, p, button { 
     font-family: 'Zen Antique Soft', 'Times New Roman', Times, serif;
-
+    color:rgba(133,120,45);
 
 }
 
@@ -15,9 +23,71 @@ body{
 
 .mainText {
 
-    text-align: center;
-    font-family: 'Zen Antique Soft'
+    margin: auto;
 
+
+}
+
+.activitiesContainer {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 40x;
+    justify-content: center;
+
+}
+
+.firstTwo , .secondTwo {
+
+    
+display: flex;
+flex-flow: row wrap;
+
+}
+
+.individualChildhoodActivitiesBox {
+    display:flex;
+    height: 310px;
+    width: 300px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Zen Antique Soft';
+    cursor : pointer; 
+    border: 10px solid rgb(219,209,148); 
+    border-radius: 10px;
+    color:rgba(133,120,45);
+    background-color: rgb(255, 248, 205);
+    align-items: center;
+    margin: 5px auto;
+    
+}
+
+.individualChildhoodActivitiesLabel{
+    font-size: 40px;
+
+
+}
+
+.mainTextContainer {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Zen Antique Soft';
+    cursor : pointer; 
+    border: 10px solid rgb(219,209,148); 
+    border-radius: 10px;
+    color:rgba(133,120,45);
+    background-color: rgb(255, 248, 205);
+    height: 454px;
+}
+
+.buttonContainer {
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 
@@ -36,8 +106,7 @@ body{
 .mainStoryText{
     font-size: 45px;
     font-family: 'Zen Antique Soft';
-
-
+  
 }
 
 
@@ -49,7 +118,37 @@ body{
     transform: translateX(-50%);
   }
 
-.col-sm-6 {
+.col-left {
+    flex: 1 1 70%;
+    max-width: 730px;
 
-margin:auto
   }
+.col-right {
+    border: 10px solid rgb(219,209,148); 
+    flex: 1 1 30%;
+    flex-direction: column;
+    max-width: 250px;
+    height: 1000px;
+    gap: 4px;
+}
+
+      
+.mainColor {
+
+    color: rgba(161,137,169,1);
+
+}
+
+button {
+
+    background-color: rgb(219,209,148); /* Green */
+    border: none;
+    color: rgba(133,120,45);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+
+}
+

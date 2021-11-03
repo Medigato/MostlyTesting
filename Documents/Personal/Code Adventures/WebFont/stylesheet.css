@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Zen Antique Soft';
-    src: url('WebFont/ZenAntiqueSoft-Regular.woff2') format('woff2'),
-        url('WebFont/ZenAntiqueSoft-Regular.woff') format('woff');
+    src: url('https://medigato.github.io/MostlyTesting/Documents/Personal/Code%20Adventures/WebFont/ZenAntiqueSoft-Regular.woff2') format('woff2'),
+        url('https://medigato.github.io/MostlyTesting/Documents/Personal/Code%20Adventures/WebFont/ZenAntiqueSoft-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
